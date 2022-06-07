@@ -61,6 +61,7 @@ public class Inventory : MonoBehaviour
         onChangeItem.Invoke();
     }
 
+    /*
     //플레이어와 필드아이템이 충돌하면 AddItem을 호출해서 Item 정보를 인자로 넘겨줌
     private void OnTriggerEnter(Collider collision)
     {
@@ -69,6 +70,18 @@ public class Inventory : MonoBehaviour
             FieldItems fieldItems = collision.GetComponent<FieldItems>();
             if (AddItem(fieldItems.GetItem()))
                 fieldItems.DestroyItem(); //아이템 획득시 필드에서 제거
+        }
+    }
+    */
+    public void PickItem()
+    {
+        if(Time.timeScale != 0.0f && Input.GetButtonDown("Fire1"))
+        {
+
+            FieldItems fieldItems = collision.GetComponent<FieldItems>();
+            if (AddItem(fieldItems.GetItem()))
+            fieldItems.DestroyItem(); //아이템 획득시 필드에서 제거
+            }
         }
     }
 }

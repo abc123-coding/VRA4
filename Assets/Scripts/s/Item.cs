@@ -15,6 +15,7 @@ public class Item
     public ItemType itemType;
     public string itemName;
     public Sprite itemImage;
+    public GameObject itemPrefab;
 
     public List<ItemEffect> efts;
 
