@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
         timer_text.text = Mathf.Ceil(time).ToString();
 
         //추후 타이머 종료
-        /*if(time < 0)
+        /*if(time <= 0)
          *  실패 화면 실행
          */
     }

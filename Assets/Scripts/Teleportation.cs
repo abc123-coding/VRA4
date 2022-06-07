@@ -22,7 +22,7 @@ public class Teleportation : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1") && isinroom)
             {
-                player.transform.position = new Vector3(-2f, player.transform.position.y, 3f);
+                player.transform.position = new Vector3(-1.2f, player.transform.position.y, 0f);
                 player.transform.Rotate(Vector3.up * 180);
                 isinroom = false;
             }
