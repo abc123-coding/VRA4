@@ -72,7 +72,8 @@ namespace Gvr.Internal
                         return GvrHeadset.editorSupportsPositionalHeadTracking;
                     }
                 }
-                else // Positional head tracking required.*/
+                */
+                else // Positional head tracking required.
                 {
                     if (InstantPreview.IsActive
                         && InstantPreview.Instance.supportsPositionalHeadTracking.isValid
