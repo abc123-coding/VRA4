@@ -47,8 +47,7 @@ namespace Gvr.Internal
             get
             {
 #if UNITY_EDITOR
-                /*
-                UnityEditor.XR.Daydream.SupportedHeadTracking minTrackingState
+                /*UnityEditor.XR.Daydream.SupportedHeadTracking minTrackingState
                         = UnityEditor.PlayerSettings.VRDaydream.minimumSupportedHeadTracking;
                 UnityEditor.XR.Daydream.SupportedHeadTracking maxTrackingState
                         = UnityEditor.PlayerSettings.VRDaydream.maximumSupportedHeadTracking;
