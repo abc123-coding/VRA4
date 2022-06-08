@@ -231,7 +231,7 @@ public class GvrEditorEmulator : MonoBehaviour
             // Check if the Camera is a valid VR Camera, and if so update it to track head motion.
             if (cam && cam.enabled && cam.stereoTargetEye != StereoTargetEyeMask.None)
             {
-                cam.transform.localPosition = HeadPosition * cam.transform.lossyScale.y;
+                //cam.transform.localPosition = HeadPosition * cam.transform.lossyScale.y;
                 cam.transform.localRotation = HeadRotation;
             }
         }
