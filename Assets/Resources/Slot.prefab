@@ -232,5 +232,6 @@ MonoBehaviour:
     itemType: 0
     itemName: 
     itemImage: {fileID: 0}
+    itemPrefab: {fileID: 0}
     efts: []
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 2791252841913482911}

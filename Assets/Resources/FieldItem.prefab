@@ -64,3 +64,4 @@ MonoBehaviour:
     itemImage: {fileID: 0}
     itemPrefab: {fileID: 0}
     efts: []
+  image: {fileID: 0}
