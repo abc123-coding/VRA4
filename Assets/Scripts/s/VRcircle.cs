@@ -7,18 +7,11 @@ using UnityEngine.Events;
 
 public class VRcircle : MonoBehaviour
 {
-    public GameObject inventory;
     public Image imgCircle;
-    //public UnityEvent GVRClick;
+    public UnityEvent GVRClick;
     public float totalTime = 1.0f; // 게이지 차는데 걸리는 시간
     bool gvrStatus; // 레티클 반응여부
     float gvrTimer;
-
-    private void Start()
-    {
-        inventory = GameObject.Find("Inventory");
-        imgCircle = GameObject.Find("Player").transform.Find("Canvas").transform.Find("Image").GetComponent<Image>();
-    }
 
     void Update()
     {
@@ -31,8 +24,7 @@ public class VRcircle : MonoBehaviour
 
         if (gvrTimer > totalTime)
         {
-            //GVRClick.Invoke();
-            //inventory.GetComponent<Inventory>().PickItem();
+            GVRClick.Invoke();
         }
     }
     public void GVROn()

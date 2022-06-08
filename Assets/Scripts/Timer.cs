@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -25,10 +26,10 @@ public class Timer : MonoBehaviour
 
         timer_text.text = Mathf.Ceil(time).ToString();
 
-        //추후 타이머 종료
-        /*if(time <= 0)
-         *  실패 화면 실행
-         */
+
+        if (time <= 0 && !CheckSingleton.isover)
+            SceneManager.LoadScene("FailScene");
+         
     }
 
     public void PauseTimer()

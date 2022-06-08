@@ -11,5 +11,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
     guid: 350ef00c77e5f4147bb17b14c1f441bc
+  - enabled: 1
+    path: Assets/Scenes/Clothing.unity
+    guid: be923641abc8830439cc10c7f0ce69ed
+  - enabled: 1
+    path: Assets/Scenes/FailScene.unity
+    guid: dd9f5dd55d2317044b79ecfc52405bc0
+  - enabled: 1
+    path: Assets/Scenes/SuccessScene.unity
+    guid: fdea01236e040694ebac2dba6124c854
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a56732cb2fa4e3b4984a8106a5b3795b, type: 2}
