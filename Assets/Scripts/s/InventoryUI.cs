@@ -7,7 +7,7 @@ public class InventoryUI : MonoBehaviour
     Inventory inven;
 
     public GameObject inventoryPanel;
-    bool activeInventory = false;
+    bool activeInventory = true;
 
     public Slot[] slots;
     public Transform slotHolder;
@@ -30,14 +30,14 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
-    private void Update()
+    /*private void Update()
     {
         if(Input.GetKeyDown(KeyCode.I))
         {
             activeInventory = !activeInventory;
             inventoryPanel.SetActive(activeInventory);
         }
-    }
+    }*/
 
 
     //슬롯 초기화&아이템 개수만큼 슬롯 채우기
