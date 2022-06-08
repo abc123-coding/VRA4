@@ -15,8 +15,8 @@ public class FieldItems : MonoBehaviour
         item.itemType = _item.itemType;
         item.efts = _item.efts;
         item.itemPrefab = _item.itemPrefab;
-
-      //  image.sprite = item.itemImage;
+        
+        //image.sprite = item.itemImage;
     }
 
     public Item GetItem()

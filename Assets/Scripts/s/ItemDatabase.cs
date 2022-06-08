@@ -13,6 +13,7 @@ public class ItemDatabase : MonoBehaviour
 
     //아이템 리스트
     public List<Item> itemDB = new List<Item>();
+
     //[Space(9)]
     //public GameObject fieldItemPrefab; //필드아이템 복제(생성) 위해
     //public Vector3[] pos; //아이템 생성될 위치
