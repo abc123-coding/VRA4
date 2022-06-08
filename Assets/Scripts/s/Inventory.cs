@@ -73,14 +73,21 @@ public class Inventory : MonoBehaviour
         }
     }
     */
+
     public void PickItem()
     {
-        if(Time.timeScale != 0.0f && Input.GetButtonDown("Fire1"))
+        if (Time.timeScale != 0.0f & Input.GetButtonDown("Fire1"))
         {
-
-            FieldItems fieldItems = collision.GetComponent<FieldItems>();
-            if (AddItem(fieldItems.GetItem()))
-            fieldItems.DestroyItem(); //아이템 획득시 필드에서 제거
+            RaycastHit hit = new RaycastHit();
+            Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+            if (Physics.Raycast(ray, out hit, 10))
+            {
+                if (hit.collider.tag == "Item")
+                {
+                    FieldItems fieldItems = hit.collider.gameObject.transform.parent.GetComponent<FieldItems>();
+                    if (AddItem(fieldItems.GetItem()))
+                        fieldItems.DestroyItem(); //아이템 획득시 필드에서 제거
+                }
             }
         }
     }

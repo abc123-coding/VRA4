@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawn : MonoBehaviour
 {
     public BoxCollider[] colliders; //랜덤 스폰할 콜라이더
-    public GameObject[] prefabs;    //게임 오브젝트
+    public GameObject prefabs;    //게임 오브젝트
     public ItemDatabase items;
 
     void Start()
@@ -22,10 +22,11 @@ public class Spawn : MonoBehaviour
             int select_area = Random.Range(0, colliders.Length);
 
             Vector3 pos = GetRandomPosition(select_area);
-            GameObject go = Instantiate(prefabs[i], pos, Quaternion.identity);
+            GameObject go = Instantiate(prefabs, pos, Quaternion.identity);
             go.GetComponent<FieldItems>().SetItem(items.itemDB[i]);
             GameObject child = Instantiate(go.GetComponent<FieldItems>().item.itemPrefab, pos, Quaternion.identity);
             child.transform.SetParent(go.transform);
+            go.GetComponent<BoxCollider>().enabled = false;
         }
     }
 
