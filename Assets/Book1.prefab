@@ -78,8 +78,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.9725078, y: 1.0145744, z: 1.6309844}
-  m_Center: {x: -0.109701805, y: 0.4582234, z: -0.0576865}
+  m_Size: {x: 1.9725078, y: 0.33042046, z: 1.6309844}
+  m_Center: {x: -0.10970176, y: 0.14675288, z: -0.0576865}
 --- !u!54 &7599677471086913830
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -108,8 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeae0faf960eeb740807ace5d09eaa3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
   imgCircle: {fileID: 0}
+  GVRClick:
+    m_PersistentCalls:
+      m_Calls: []
   totalTime: 1
 --- !u!114 &6797915866600668481
 MonoBehaviour:

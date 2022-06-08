@@ -87,6 +87,7 @@ public class Inventory : MonoBehaviour
                     FieldItems fieldItems = hit.collider.gameObject.transform.parent.GetComponent<FieldItems>();
                     if (AddItem(fieldItems.GetItem()))
                         fieldItems.DestroyItem(); //아이템 획득시 필드에서 제거
+                    CheckSingleton.count++;
                 }
             }
         }
